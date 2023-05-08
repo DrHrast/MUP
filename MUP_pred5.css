@@ -1,0 +1,33 @@
+* {background-color: rgb(188, 232, 232);}
+
+h1 {
+    color: darkslategrey;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+h3 {
+    color: darkslategray;
+    text-align: left;
+    margin-top: 1px;
+}
+
+.Ime {
+    float: left;
+    box-sizing: content-box;  
+    width: 80%;
+    height: 100px;
+    padding: 30px;  
+    border: 1px solid blue;
+}
+
+.Linkovi {
+    float: right;
+    padding-right: 10%;
+    padding-top: 40px;
+    box-sizing: content-box;  
+    width: 10%;
+    height: 100px;
+    padding: 30px;  
+    border: 1px solid blue;
+}

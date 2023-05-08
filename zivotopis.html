@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .naslov {
+                text-align: center;
+            }
+
+            .tekst { 
+                background-color: #fff;
+                color: #000;
+                text-align: center;
+                font-size: larger;
+            }
+
+            .code{
+                color: black;
+                font-size: large;
+                font-weight: bolder;
+            }
+
+            .lista {
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="naslov"><h1>Curriculum Vitae</h1></div>
+        <img src="Mr-Robot.jpg" alt="Petar Huljek" width="600" height="360" title="Petar Huljek">
+        <div class="lista">
+            <ol>
+                <h4>OSOBNI PODACI</h4>
+                <ul>
+                    <li>
+                        <p><b>Ime:</b> dr. sc. Petar Huljek</p>
+                    </li>
+                    <li>
+                        <p><b>Adresa:</b> Vukovarska 69</p>
+                    </li>
+                    <li>
+                        <p><b>Grad i poštanski broj:</b> Zagreb, 10040</p>
+                    </li>
+                    <li>
+                        <p><b>E-mail:</b> pehuljek@vsite.hr</p>
+                    </li>
+                    <li>
+                        <p><b>Datum rođenja:</b> 21.6.1990.</p>
+                    </li>
+                </ul>
+            </ol>
+            <ol>
+                <h4>OBRAZOVANJE</h4>
+                <ul>
+                    <li>
+                        <p><b>Vrijeme od do:</b> 1994. - 1997 <em>(napredan sam)</em></p>
+                    </li>
+                </ul>
+            </ol>
+        </div>
+        <div class="tekst">
+            <p><br>Uglavnom se bavim programiranjem za boljitak života na Zemlji. Time pokušavam riješiti glad u svijetu i manjak pitke vode.<br>
+                Jedan od najkorištenijih algoritama za pronalaženje pitke vode grančicama je <q>Jump algorithm</q> za kojeg sam bio nominiran 
+                za <b>Nobelovu nagradu</b>.<br>Funkcija prikazana niže je povjerljivi podatak koji treba ostati tajan jer ako padne u krive ruke 
+                posljadice bi mogle biti katastrofalne.<br> Dalje u tekstu označavan kao <abbr title="Jump algorithm">JAMB</abbr><br></p>
+        </div>
+        <div class="code", style="text-indent: 10in;">
+            <pre>
+                <code>
+def jump(leaf, target):
+    step = int(sqrt(len(leaf)))
+    prev = 0
+    while True:
+        if leaf[step] == target:
+            print(f'\nBroj {target} je pronađen u listi na poziciji {step}.\n')
+            return
+        if leaf[step] > target:
+            for i in range(step):
+                if leaf[prev + i] == target:
+                    print(f'\nBroj {target} je pronađen u listi na poziciji {prev + i + 1}.\n')
+                    return
+                elif leaf[prev + i] > target:
+                    print(f'\nNema traženog broja u listi.\n')
+                    return
+        prev = step
+        step += int(sqrt(len(leaf)))
+        if step > len(leaf) - 1:
+            for i in range(prev + 1,len(leaf)):
+                if leaf[i] == target:
+                    print(f'\nBroj {target} je pronađen u listi na poziciji {i + 1}.\n')
+                    return   
+            print(f'\nNema traženog broja u listi.\n')
+            return
+                </code>
+            </pre>
+        </div>
+    </body>
+</html>

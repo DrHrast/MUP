@@ -1,0 +1,13 @@
+.list_nostyle{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section_header{
+    margin-bottom: 0;
+}
+
+.section_info{
+    margin-bottom: 150px;
+}

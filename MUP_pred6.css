@@ -1,0 +1,42 @@
+.paragrafDrugi {
+    color: red;
+    font-family: Arial;
+    font-size: 28pt;
+}
+
+.paragrafTreci {
+    color: green;
+    font-size: 18pt;
+    font-family: 'Courier New';
+}
+
+.paragrafDio {
+    color: green;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium';
+}
+
+h3 {
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;  
+    font-size: 16pt;
+    color: black;
+}
+
+table, tr{
+    width: 70%;
+    border: 2px solid olive;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid olive;
+    padding: 3px 7px 2px 7px;
+}
+
+.body {
+    font-size: 12pt;
+    color: navy;
+    background-color: silver;
+}

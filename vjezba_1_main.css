@@ -1,0 +1,31 @@
+.text__italic{
+    font-style: italic;
+}
+
+.text__bold{
+    font-weight: bold;
+}
+
+.text__underline{
+    text-decoration: underline;
+}
+
+.list__low_alph{
+    list-style-type: lower-alpha;
+}
+
+.list__upp_alph{
+    list-style-type: upper-alpha;
+}
+
+.list__romman{
+    list-style-type: upper-roman;
+}
+
+.list__circle{
+    list-style-type: circle;
+}
+
+.table, td, th{
+    border: 1px solid black;
+}

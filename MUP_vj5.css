@@ -1,0 +1,57 @@
+.small_imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: fit-content;
+    gap: 2px;
+    margin: 0 auto;
+}
+
+.small_imgs > img {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1);
+    transition: all 0.5s;    
+}
+
+.small_imgs > img:hover {
+    transform: scale(0.9);
+    opacity: 1;
+}
+
+.original_imgs {
+    margin-top: 50px;
+}
+
+.original_imgs > p {
+    text-align: center;
+}
+
+.original_imgs > img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Zadatak 2 */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image_holder {
+    width: 640px;
+    height: 480px;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation > button {
+    width: 80px;
+    cursor: pointer;
+}

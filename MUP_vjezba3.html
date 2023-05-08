@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MUP_vjezba3.css">
+    <title>Vsite</title>
+</head>
+<body>
+    <div id="wrapper">
+        <section >
+            <div>
+                <img src="vsite_hr.JPG" alt=""/>
+            </div>
+            <form action="https://www.vsite.hr" method="get">
+                <p class="InfoData">Podaci o korisniku</p>
+                <p>Polja označena zvjezdicom su obavezna.</p>
+                <div>
+                    <div>
+                        <label for="username">Korisničko ime:*</label>
+                        <input type="text" id="username" name="username" required/>
+                    </div>
+                    <div>
+                        <label for="mail">E-mail adresa:*</label>
+                        <input type="email" id="mail" name="mail" required/>
+                    </div>
+                    <div>
+                        <label for="nsifra">Nova Šifra:*</label>
+                        <input type="password" id="nsifra" name="nsifra" required/>
+                    </div>
+                    <div>
+                        <label for="nsifrap">Nova Šifra ponovo:*</label>
+                        <input type="password" id="nsifrap" name="nsifrap" required/>
+                    </div>
+                </div>
+                <p class="InfoData">Profil korisnika</p>
+                <p>Ove informacije će biti prikazane javno.</p>
+                <div>
+                    <div>
+                        <label for="icq">ICQ Number:</label>
+                        <input type="number" id="icq" name="icq"/>
+                    </div>
+                    <div>
+                        <label for="yahoo">Yahoo Messenger:</label>
+                        <input type="text" id="yahoo" name="yahoo"/>
+                    </div>
+                    <div>
+                        <label for="username">Korisničko ime*</label>
+                        <input type="text" id="username" name="username"/>
+                    </div>
+                    <div>
+                        <label for="username">Korisničko ime*</label>
+                        <input type="text" id="username" name="username"/>
+                    </div>
+                    <div>
+                        <label for="username">Korisničko ime*</label>
+                        <input type="text" id="username" name="username"/>
+                    </div>
+                    <div>
+                        <label for="username">Korisničko ime*</label>
+                        <input type="text" id="username" name="username"/>
+                    </div>
+                    <div>
+                        <div class="vertical-align">
+                            <label for="comment">Ovaj dio teksta može se<br> dodati na poslanu poruku<br>
+                            Najveće dužine 255 znakova</label>
+                            <textarea id="comment" name="comment" rows="6" cols="30"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="vertical-align">
+                            <label for="activity">Aktivnosti:</label>
+                            <select id="activity" multiple size="5">
+                                <option name="a1" >Programiranje u Pythonu</option>
+                                <option name="a2" >Opijanje</option>
+                                <option name="a3" >Ispiranje</option>
+                                <option name="a4" >Podmirivanje</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </form>
+        </section>
+    </div>    
+</body>
+</html>

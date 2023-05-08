@@ -1,0 +1,51 @@
+table, tr, td{
+    border: 1px inset #fff;
+    border-collapse: separate;
+}
+
+table{
+    border-style: outset;
+    margin: 0 auto; 
+}
+
+td{
+    width: 115px;
+}
+
+thead>tr {
+    font-weight: bold;
+}
+
+tr.days {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.gray {
+    background-color: gray;
+}
+
+/* td:empty::after{
+    content: "\0a00";
+} */
